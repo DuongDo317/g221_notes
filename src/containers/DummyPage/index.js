@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import Foo from './components/Foo'
-import Bar from './components/Bar'
+import View from './View'
 
 export default class DummyPage extends Component {
   constructor(props) {
@@ -12,11 +11,6 @@ export default class DummyPage extends Component {
   }
 
   render() {
-    return (
-      <>
-        <Foo>Foo...</Foo>
-        <Bar>Bar...</Bar>
-      </>
-    )
+    return <View {...this.props} />
   }
 }
